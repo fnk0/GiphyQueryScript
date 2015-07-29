@@ -10,7 +10,7 @@ def add_to_file(file, json_data):
     for d in arr:
         gif = str(d["images"]["downsized"]["url"])
         print gif
-        file.write(gif + "\n")
+        file.write(gif + "\r\n")
 
 
 def get_all_gifs(filename, search):
@@ -27,10 +27,10 @@ def get_all_gifs(filename, search):
     gifs.close()
 
 
-# get_all_gifs("cat_gifs.txt", "funny+cats")
-# get_all_gifs("dog_gifs.txt", "funny+dogs")
-# get_all_gifs("futurama_gifs.txt", "futurama")
-# get_all_gifs("funny_gifs.txt", "funny")
+get_all_gifs("cat_gifs.txt", "funny+cats")
+get_all_gifs("dog_gifs.txt", "funny+dogs")
+get_all_gifs("futurama_gifs.txt", "futurama")
+get_all_gifs("funny_gifs.txt", "funny")
 
 
 
